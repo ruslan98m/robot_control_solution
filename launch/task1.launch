@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch> 
+  <!-- load parametrs -->
+  <rosparam file="$(find robot_control_solution)/config/task1_params.yaml" command="load" />
+  <!-- Start the simulation in gazebo -->
+  <include file="$(find robot_control_solution)/launch/ur5_bringup.launch"></include>
+  <!-- Start the control node -->
+  <node name="sin_control_node" pkg="robot_control_solution" type="sin_control_node" output="screen"></node>
+  
+</launch>

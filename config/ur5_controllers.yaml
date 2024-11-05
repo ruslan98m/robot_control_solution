@@ -1,0 +1,38 @@
+
+
+
+joint_group_position_controller:
+  type: "position_controllers/JointGroupPositionController"
+  joints:
+    - "shoulder_pan_joint"
+    - "shoulder_lift_joint"
+    - "elbow_joint"
+    - "wrist_1_joint"
+    - "wrist_2_joint"
+    - "wrist_3_joint"
+
+  gains:
+    shoulder_pan_joint: {p: 50.0, i: 0.00, d: 1.0}
+    shoulder_lift_joint: {p: 65.0, i: 0.0, d: 1.0}
+    elbow_joint: {p: 50.0, i: 0.00, d: 1.0}
+    wrist_1_joint: {p: 40.0, i: 0.00, d: 0.5}
+    wrist_2_joint: {p: 1.0, i: 0.00, d: 0.6}
+    wrist_3_joint: {p: 0.5, i: 0.0, d: 0.2}
+  publish_rate: 100
+
+
+joint_state_controller:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 200
+
+# gazebo_ros_control:
+#   pid_gains:
+#     shoulder_pan_joint: {p: 40.0, i: 0.05, d: 1.0}
+#     shoulder_lift_joint: {p: 50.0, i: 0.1, d: 1.0}
+#     elbow_joint: {p: 20.0, i: 0.05, d: 1.0}
+#     wrist_1_joint: {p: 5.0, i: 0.05, d: 0.5}
+#     wrist_2_joint: {p: 1.0, i: 0.05, d: 0.6}
+#     wrist_3_joint: {p: 0.5, i: 0.0, d: 0.2}
+#   publish_rate: 100
+# gazebo_ros_control:
+#   publish_rate: 100

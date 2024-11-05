@@ -1,0 +1,21 @@
+
+frequency: 0.5
+joint_limits:
+  shoulder_pan_joint:
+    min: -2
+    max: 2
+  shoulder_lift_joint:
+    min: -2
+    max: -1
+  elbow_joint:
+    min: -0.5
+    max: 0.5
+  wrist_1_joint:
+    min: -1
+    max: 1
+  wrist_2_joint:
+    min: -1
+    max: 1
+  wrist_3_joint:
+    min: -1
+    max: 1

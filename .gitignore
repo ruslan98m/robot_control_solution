@@ -1,0 +1,56 @@
+# Build files
+build/
+devel/
+install/
+log/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+*.swp
+
+# ROS specific files
+*.o
+*.so
+*.a
+*.d
+*.dSYM
+*.orig
+*.~ 
+*.bak
+
+# Editor specific files
+*.idea/
+*.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Test output
+test_results/
+*.test_result
+
+# Coverage reports
+coverage/
+*.cover
+*.cov
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
+.env
+*.env
+
+# Other
+*.log

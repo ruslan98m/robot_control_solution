@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch> 
+  <!-- Start the simulation in gazebo -->
+  <include file="$(find robot_control_solution)/launch/ur5_bringup.launch"></include>
+  <!-- Start the control node -->
+  <node pkg="robot_control_solution" type="robot_motion_control_node" name="robot_motion_control_node" output="screen"></node>
+  
+</launch>
