@@ -12,6 +12,20 @@ Before running the launch file, ensure that you have the following prerequisites
 
 ## Installing dependencies
 
+### ROS dependencies
+The simulation is based on the repository
+https://github.com/ros-industrial/universal_robot
+
+run this command to install dependencies
+```bash
+cd ~/catkin_ws
+rosdep install --from-paths src --ignore-src -r -y
+```
+Or you can install them manually
+
+```bash
+sudo apt install ros-noetic-ur*
+```
 ### Eigen
 
 Eigen is a C++ template library for linear algebra. You can install Eigen using the following methods:
